@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zvanični sajt Menjačnice Almanah u Nišu. Pronađite aktuelni kurs valuta, kontakt informacije i lokaciju u centru grada." />
+  <title>Menjačnica Almanah - Niš</title>
+  <link rel="icon" href="https://www.nbs.rs/export/sites/default/internet/latinica/50/grafika/logo-nbs-cir.svg" type="image/svg+xml">
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #e9ecef;
+      color: #333;
+    }
+    header {
+      background: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    nav {
+      background-color: #004d99;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .kursna-lista {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    .kursna-lista img {
+      height: 40px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 0.75rem;
+      text-align: center;
+    }
+    th {
+      background-color: #004d99;
+      color: white;
+    }
+    .kontakt, .lokacija, .recenzije {
+      margin-top: 2rem;
+    }
+    .lokacija {
+      border-top: 2px dashed #ccc;
+      padding-top: 1.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #003366;
+      color: white;
+      margin-top: 2rem;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+    a {
+      color: #004d99;
+      text-decoration: none;
+    }
+    .recenzije {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+    .recenzije h3 {
+      font-size: 1.8rem;
+    }
+    .recenzije .recenzija {
+      margin-top: 1rem;
+      background: #f7f7f7;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .recenzije .recenzija p {
+      margin: 0;
+      font-style: italic;
+    }
+    .recenzije .recenzija small {
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Menjačnica Almanah</h1>
+    <p>Niš – Trg Kralja Milana bb</p>
+  </header>
+
+  <nav>
+    <a href="#kurs">Kursna lista</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="#lokacija">Lokacija</a>
+    <a href="#recenzije">Recenzije</a>
+  </nav>
+
+  <main>
+    <section class="kursna-lista" id="kurs">
+      <h2>Kursna lista (NBS)</h2>
+      <img src="https://www.nbs.rs/export/sites/default/internet/latinica/50/grafika/logo-nbs-cir.svg" alt="NBS logo" />
+      <table id="kursTable">
+        <thead>
+          <tr>
+            <th>Valuta</th>
+            <th>Oznaka</th>
+            <th>Srednji kurs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="3">EUR: 1 = 117.50 RSD</td></tr>
+          <tr><td colspan="3">USD: 1 = 106.25 RSD</td></tr>
+          <tr><td colspan="3">CHF: 1 = 108.50 RSD</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="kontakt" id="kontakt">
+      <h2>Kontakt</h2>
+      <p><strong>Telefon:</strong> 018 245285</p>
+      <p><strong>Email:</strong> <a href="mailto:almanahmenjacnica@gmail.com">almanahmenjacnica@gmail.com</a></p>
+      <p><strong>Radno vreme:</strong></p>
+      <ul>
+        <li>Ponedeljak: 07:00 - 21:00</li>
+        <li>Utorak: 07:00 - 21:00</li>
+        <li>Sreda: 07:00 - 21:00</li>
+        <li>Četvrtak: 07:00 - 21:00</li>
+        <li>Petak: 07:00 - 21:00</li>
+        <li>Subota: 07:00 - 21:00</li>
+        <li>Nedelja: 07:00 - 21:00</li>
+      </ul>
+    </section>
+
+    <section class="lokacija" id="lokacija">
+      <h2>Gde se nalazimo?</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.0078709174034!2d21.900983315501603!3d43.31900287913559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b13c4d81a97f%3A0xe87f9f1f587c0f73!2sMenja%C4%8Dnica%20Almanah!5e0!3m2!1ssr!2srs!4v1620239333355!5m2!1ssr!2srs"></iframe>
+    </section>
+
+    <section class="recenzije" id="recenzije">
+      <h3>Recenzije</h3>
+      <div class="recenzija">
+        <p>"Odlična menjačnica, uvek ljubazno osoblje i najpovoljniji kursevi!"</p>
+        <small>- Marko Jovanović</small>
+      </div>
+      <div class="recenzija">
+        <p>"Brza i efikasna usluga, preporučujem svakome!"</p>
+        <small>- Jelena Petrović</small>
+      </div>
+      <h4>Ostavite svoju recenziju</h4>
+      <form>
+        <textarea placeholder="Vaša recenzija..." rows="4" style="width: 100%;"></textarea><br>
+        <button type="submit">Pošaljite recenziju</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Menjačnica Almanah, Niš. Sva prava zadržana.</p>
+  </footer>
+
+</body>
+</html>
